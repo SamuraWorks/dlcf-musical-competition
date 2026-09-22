@@ -948,7 +948,7 @@ export default function MusicalCompetitionPage() {
                 Saturday, October 3, 2026. Showcase the musical gifts God has given you. Individuals,
                 teams, groups, and branches or campuses are welcome to participate.
                 <br />
-                Applications close on Monday, September 29, 2026 at 11:59 PM.
+                Applications closes on Tuesday, September 29, 2026 at 11:59 PM.
               </p>
             </div>
             <div className="mf-hero-media">
@@ -965,8 +965,8 @@ export default function MusicalCompetitionPage() {
       <section className="mf-countdown" aria-label="Application deadline countdown">
         <Countdown
           target="2026-09-29T23:59:00"
-          label="Applications close in"
-          sub="Monday, September 29, 2026 at 11:59 PM"
+          label="Applications closes on"
+          sub="Tuesday, September 29, 2026 at 11:59 PM"
           doneLabel="Applications are now closed."
         />
       </section>
@@ -1016,8 +1016,8 @@ export default function MusicalCompetitionPage() {
                   support you need.
                 </li>
                 <li>
-                  <strong>Applications close</strong>
-                  Monday, September 29, 2026 at 11:59 PM.
+                  <strong>Applications closes</strong>
+                  Tuesday, September 29, 2026 at 11:59 PM.
                 </li>
                 <li>
                   <strong>What happens next</strong>
