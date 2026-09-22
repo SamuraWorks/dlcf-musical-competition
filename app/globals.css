@@ -70,18 +70,19 @@ h1 { font-size: clamp(44px, 5.65vw, 80px); line-height: 1.16; letter-spacing: -2
 .mf-success-icon { display: block; font-size: 42px; line-height: 1; margin-bottom: 18px; }
 .mf-success h2 { font: 400 38px/1.15 Georgia, 'Times New Roman', serif; letter-spacing: -1px; margin-bottom: 16px; }
 .mf-success p { font-size: 15px; line-height: 1.7; color: #444; }
+.mf-success-glow { margin-top: 16px; color: #2c8da1; font-weight: 700; }
 .mf-submit-inline { max-width: 340px; margin: 30px auto 0; text-decoration: none; }
 
 /* Hero with logo and flyer */
-.mf-hero { background: linear-gradient(135deg, #2c8da1 0%, #3daabd 55%, #6fc3d2 100%); }
-.mf-hero-grid { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: clamp(24px, 5vw, 72px); align-items: center; max-width: 1120px; margin: 0 auto; }
-.mf-hero-copy .eyebrow { color: #eafbfd; margin-bottom: 24px; }
-.mf-hero-copy h1 { margin-bottom: 6px; }
-.mf-hero-copy > p:last-child { max-width: 620px; }
-.mf-hero-logo { display: block; width: 86px; height: 86px; object-fit: contain; background: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 10px 26px rgba(1, 26, 36, .22); margin-bottom: 22px; }
+.mf-hero { background: linear-gradient(135deg, #2c8da1 0%, #3daabd 55%, #6fc3d2 100%); padding: 40px max(22px, 12vw) 36px; }
+.mf-hero-grid { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: clamp(20px, 4vw, 56px); align-items: center; max-width: 1120px; margin: 0 auto; }
+.mf-hero-copy .eyebrow { color: #eafbfd; margin-bottom: 14px; }
+.mf-hero-copy h1 { margin-bottom: 4px; font-size: clamp(30px, 4.5vw, 46px); }
+.mf-hero-copy > p:last-child { max-width: 620px; margin-top: 12px; font-size: 14.5px; line-height: 1.6; }
+.mf-hero-logo { display: block; width: 62px; height: 62px; object-fit: contain; background: #fff; border-radius: 50%; padding: 9px; box-shadow: 0 8px 20px rgba(1, 26, 36, .22); margin-bottom: 14px; }
 .mf-hero-media { text-align: center; }
-.mf-flyer { display: block; width: 100%; max-width: 300px; margin: 0 auto; border-radius: 12px; border: 5px solid rgba(255, 255, 255, .88); box-shadow: 0 22px 50px rgba(1, 26, 36, .35); }
-@media (max-width: 900px) { .mf-hero-grid { grid-template-columns: 1fr; gap: 34px; text-align: center; }.mf-hero-copy > p:last-child { margin-left: auto; margin-right: auto; }.mf-hero-logo { margin-left: auto; margin-right: auto; }.mf-flyer { max-width: 260px; } }
+.mf-flyer { display: block; width: 100%; max-width: 210px; margin: 0 auto; border-radius: 10px; border: 4px solid rgba(255, 255, 255, .88); box-shadow: 0 16px 38px rgba(1, 26, 36, .32); }
+@media (max-width: 900px) { .mf-hero-grid { grid-template-columns: 1fr; gap: 24px; text-align: center; }.mf-hero-copy > p:last-child { margin-left: auto; margin-right: auto; }.mf-hero-logo { margin-left: auto; margin-right: auto; }.mf-flyer { max-width: 210px; } }
 
 /* Step-by-step wizard */
 .mf-progress-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px; }
@@ -92,6 +93,11 @@ h1 { font-size: clamp(44px, 5.65vw, 80px); line-height: 1.16; letter-spacing: -2
 .mf-step { padding: 32px 30px 28px; }
 .mf-step-head { margin-bottom: 22px; }
 .mf-step-head h2 { font: 400 26px/1.25 Georgia, 'Times New Roman', serif; color: #121212; letter-spacing: -.4px; }
+.mf-intro-line { font-size: 14.5px; line-height: 1.6; color: #444; margin: 0 0 16px; }
+.mf-intro-list { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 12px; }
+.mf-intro-list li { position: relative; padding-left: 20px; font-size: 14px; line-height: 1.55; color: #202124; }
+.mf-intro-list li::before { content: ''; position: absolute; left: 0; top: 7px; width: 8px; height: 8px; border-radius: 50%; background: #2c8da1; }
+.mf-intro-list strong { display: block; font-weight: 700; margin-bottom: 1px; }
 .mf-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 28px; }
 .mf-next { flex: 1; max-width: 280px; margin: 0; }
 .mf-btn-back { flex: none; min-height: 50px; border: 1px solid #c4c7c5; border-radius: 6px; background: #fff; color: #333; padding: 13px 24px; font-size: 13px; font-weight: 800; letter-spacing: .6px; cursor: pointer; transition: border-color .15s ease, color .15s ease; }
