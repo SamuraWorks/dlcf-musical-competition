@@ -937,28 +937,30 @@ export default function MusicalCompetitionPage() {
     <main className="inner-page">
       <SiteHeader />
 
-      <section className="inner-hero mf-hero">
-        <div className="mf-hero-grid">
-          <div className="mf-hero-copy">
-            <img className="mf-hero-logo" src="/choir/competition-logo.png" alt="DLCF Musical Competition logo" />
-            <p className="eyebrow">DLCF National Campus Congress, October 1 to 4, 2026</p>
-            <h1>DLCF Musical Competition</h1>
-            <p>
-              Saturday, October 3, 2026. Showcase the musical gifts God has given you. Individuals,
-              teams, groups, and branches or campuses are welcome to participate.
-              <br />
-              Applications close on Monday, September 29, 2026 at 11:59 PM.
-            </p>
+      {!started && (
+        <section className="inner-hero mf-hero">
+          <div className="mf-hero-grid">
+            <div className="mf-hero-copy">
+              <img className="mf-hero-logo" src="/choir/competition-logo.png" alt="DLCF Musical Competition logo" />
+              <p className="eyebrow">DLCF National Campus Congress, October 1 to 4, 2026</p>
+              <h1>DLCF Musical Competition</h1>
+              <p>
+                Saturday, October 3, 2026. Showcase the musical gifts God has given you. Individuals,
+                teams, groups, and branches or campuses are welcome to participate.
+                <br />
+                Applications close on Monday, September 29, 2026 at 11:59 PM.
+              </p>
+            </div>
+            <div className="mf-hero-media">
+              <img
+                className="mf-flyer"
+                src="/choir/flyer-congress.jpeg"
+                alt="Official flyer for the DLCF National Campus Congress"
+              />
+            </div>
           </div>
-          <div className="mf-hero-media">
-            <img
-              className="mf-flyer"
-              src="/choir/flyer-congress.jpeg"
-              alt="Official flyer for the DLCF National Campus Congress"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section className="mf-countdown" aria-label="Application deadline countdown">
         <Countdown
